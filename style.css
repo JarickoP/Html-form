@@ -3,5 +3,58 @@ body {
 }
 
 input {
+  margin-bottom: 10px;
+}
+
+label {
+  display:inline-block;
+  text-align: right;
+  font-size: 20px;
+  width: 200px;
+}
+
+input[type="text"] {
+  font-size: 15px;
+  width: 150px;
   margin: 5px;
+}
+
+textarea {
+  width: 150px;
+  font-size: 15px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+button {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.buttonCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.spaceButtons {
+  margin-right: 20px;
+}
+
+@media all and (min-width: 1000px) {
+  input[type="text"] {
+    width: 800px;
+    font-size: 30px;
+  }
+
+  textarea {
+    width:800px;
+    font-size: 30px;
+  }
+
+  label {
+    font-size: 30px;
+  }
 }

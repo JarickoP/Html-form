@@ -15,10 +15,8 @@
   <body>
     <main>
       <form>
-        <fieldset>
-          <legend>Shipping Information</legend>
           <div>
-            <label for="name">Full Name:</label>
+            <label class = ".nameAndEmail" for="name">Full Name:</label>
             <input
               id="name"
               type="text"
@@ -27,19 +25,17 @@
             />
           </div>
           <div>
-            <label for="location">Zipcode:</label>
+            <label class = ".nameAndEmail" for="Email">Email:</label>
             <input
-              id="location"
+              id="Email"
               type="text"
-              name="zipcode"
+              name="Email"
               autofocus="on"
-              maxlength="5"
               required
             />
           </div>
-        </fieldset>
         <div>
-          <label for="form-message">Your message:</label>
+          <label class = ".nameAndEmail" for="form-message">Your message:</label>
           <textarea
             id="form-message"
             name="message"
@@ -49,6 +45,8 @@
             placeholder="How can I help you?"
           ></textarea>
         </div>
+
+        <!--
         <div>
           <label for="password">Password:</label>
           <input id="password" type="password" name="password" minlength="8" />
@@ -102,8 +100,11 @@
             placeholder="xxx-xxx-xxxx"
           />
         </div>
-        <button type="submit">Submit</button>
+        -->
+      <div class="buttonCenter">
+        <button type="submit" class="spaceButtons">Submit</button>
         <button type="reset">Reset</button>
+      </div>
       </form>
     </main>
   </body>
